@@ -15,7 +15,7 @@ const ImgTitle = styled.div`
 `;
 
 const App = () => {
-	const [chosenCountry, setChosenCountry] = useState("argentina");
+	const [chosenCountry, setChosenCountry] = useState("global");
 	const [dataCountry, setDataCountry] = useState("");
 
 	const handleChange = (e) => {
@@ -24,7 +24,10 @@ const App = () => {
 	};
 
 	useEffect(() => {
-		fetch(`https://covid19.mathdro.id/api/countries/${chosenCountry}`)
+		(chosenCountry == "global"
+			? fetch("https://covid19.mathdro.id/api")
+			: fetch(`https://covid19.mathdro.id/api/countries/${chosenCountry}`)
+		)
 			.then((res) => res.json())
 			.then((data) => setDataCountry(data));
 	}, [chosenCountry]);

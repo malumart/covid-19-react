@@ -40,6 +40,7 @@ const CountryDropdown = (props) => {
 		<div>
 			{countries && (
 				<Dropdown onChange={onChange}>
+					<option value="global">Global</option>
 					{countries.map((country, i) => (
 						<option key={i} value={country.name}>
 							{country.name}

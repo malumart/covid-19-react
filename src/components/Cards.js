@@ -47,7 +47,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 		<ContainerCards>
 			<Card>
 				<div className="infected">
-					<h4> Confirmed: {confirmed.value} </h4>
+					<h4> Confirmed: {confirmed.value.toLocaleString()} </h4>
 					<h6>Number of infected cases of COVID-19 </h6>
 					<p> {new Date(lastUpdate).toDateString()} </p>
 				</div>
@@ -55,7 +55,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
 			<Card>
 				<div className="recovered">
-					<h4> Recovered : {recovered.value} </h4>
+					<h4> Recovered : {recovered.value.toLocaleString()} </h4>
 					<h6>Number of recovered cases of COVID-19 </h6>
 					<p> {new Date(lastUpdate).toDateString()} </p>
 				</div>
@@ -63,7 +63,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
 			<Card>
 				<div className="deaths">
-					<h4> Deaths: {deaths.value} </h4>
+					<h4> Deaths: {deaths.value.toLocaleString()} </h4>
 					<h6>Number of deaths caused by COVID-19 </h6>
 					<p> {new Date(lastUpdate).toDateString()} </p>
 				</div>
