@@ -1,4 +1,7 @@
-COVID-19 tracker utilizando React y styled-components
+COVID-19 tracker utilizando React y styled-components.
+
+Trabajo Práctico realizado para el curso de Desarrollo Frontend de ADA Online. 
+
 API utilizada: https://covid19.mathdro.id/api.
 
 https://malumart.github.io/covid-19-react/
