@@ -1,3 +1,13 @@
+COVID-19 tracker utilizando React y styled-components.
+
+Trabajo Práctico realizado para el curso de Desarrollo Frontend de ADA Online. 
+
+API utilizada: https://covid19.mathdro.id/api.
+
+https://malumart.github.io/covid-19-react/
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +76,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# covid-19-react
